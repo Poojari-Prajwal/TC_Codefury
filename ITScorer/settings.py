@@ -9,13 +9,11 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-
 import os
 import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -26,7 +24,7 @@ SECRET_KEY = '9(z=476wa5_v6g#5=vb%cel=xhr8en1s)-q00d5yh&t+4o@v+q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['chaoscodefury.herokuapp.com','127.0.0.1:8000']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -130,7 +128,7 @@ LOGIN_URL = 'login'
 
 LOGIN_REDIRECT_URL = 'home'
 
-STATIC_ROOT = os.path.join(BASE_DIR,'TC_Codefury/static')
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
